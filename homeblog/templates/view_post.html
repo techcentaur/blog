@@ -3,5 +3,8 @@
 {% block title %}{{ post.title }}{% endblock %}
 
 {% block content %}
+    {% for post in posts %}
+
     {{ post.body }}
+    {% endfor %}
 {% endblock %}
