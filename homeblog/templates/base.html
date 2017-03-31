@@ -1,11 +1,29 @@
 <html>
     <head>
-        <title>{% block head_title %}Welcome to my blog{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    	html{
+    		font-family: 'Comfortaa', sans-serif;
+    		font-size: 20px;
+    	}
+
+.blogname{
+        font-size: 50px;
+        text-align: center;
+        font-family: 'Comfortaa';
+        margin-top: 0px;
+
+}
+    </style>
+        <title>{% block head_title %}SolankiVerse-AnotherKidInTheWorld{% endblock %}</title>
     </head>
     <body>
-        <h1>{% block title %}Welcome to my block{% endblock %}</h1>
+        <h1 class="blogname">{% block title %}Solanki-Universe{% endblock %}</h1>
+        
         {% block content %}
 
         {% endblock %}
-    </body>
+
 </html>

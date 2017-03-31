@@ -1,10 +1,26 @@
+<html>
+    <head>
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <style>
+    .posts {
+        list-style: none;
+        text-decoration: none;
+        text-align: left;
+        margin-left: 20%;
+    }
+    </style>
+    </head>
+    <body>
 {% extends 'base.html' %} 
-{% block head_title %}{{ post.title }}{% endblock %}
-{% block title %}{{ post.title }}{% endblock %}
+{% block head_title %}{{ posts.title }}{% endblock %}
+{% block title %}{{ posts.title }}{% endblock %}
 
 {% block content %}
-    {% for post in posts %}
-
-    {{ post.body }}
-    {% endfor %}
+<ul class="posts">
+<li>
+    {{ posts.body }}</li>
+    </ul>
 {% endblock %}
+</body></html>
